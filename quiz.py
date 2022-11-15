@@ -1,4 +1,5 @@
 import time
+import random
 
 
 def show_instructions(instructions: list):
@@ -19,12 +20,14 @@ show_instructions(
 )
 
 questions = {
-    ">> Q1. Delhi is Capital of India": "true",
-    ">> Q2. Steve Jobs is the founder of Microsoft": "false",
-    ">> Q3. Jack Dorsey is the founder of Twitter": "true",
-    ">> Q4. Rust is a programming language": "true",
-    ">> Q5. Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson.": "true",
+    ">> Delhi is Capital of India": "true",
+    ">> Steve Jobs is the founder of Microsoft": "false",
+    ">> Jack Dorsey is the founder of Twitter": "true",
+    ">> Rust is a programming language": "true",
+    ">> Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson.": "true",
 }
+
+# randomQuestions = random.sample(list(questions), 5)
 
 
 def start_quiz():
@@ -43,3 +46,13 @@ def start_quiz():
 
 if __name__ == "__main__":
     start_quiz()
+
+""""
+Improvements:
+1. Add more questions
+2. Store gretting messages in any container like list and show them randomly when user answer the question.
+3. Add numbering to questions automatically. Example: Q1. Delhi is Capital of India
+4. Show random questions from questions dictionary.
+
+
+"""
